@@ -165,4 +165,4 @@ class ApiUptime(unittest.TestCase):
 		sleep(1)
 
         self.report(conn, service, sum(output),
-                    total, str(start_time), str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S%z")), total_down_time)
+                    len(output), str(start_time), str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S%z")), total_down_time)
