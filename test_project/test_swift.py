@@ -106,6 +106,7 @@ class ApiUptime(unittest.TestCase):
 
     def test_create_delete_container(self, conn, service, times, container_name, object_name):
 	output = []
+	total = 0
         start_time = datetime.now().strftime("%Y-%m-%dT%H:%M:%S%z")
         down_time = None
         total_time = 0
@@ -164,4 +165,4 @@ class ApiUptime(unittest.TestCase):
 		sleep(1)
 
         self.report(conn, service, sum(output),
-                    len(output), str(start_time), str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S%z")), total_down_time)
+                    total, str(start_time), str(datetime.now().strftime("%Y-%m-%dT%H:%M:%S%z")), total_down_time)
