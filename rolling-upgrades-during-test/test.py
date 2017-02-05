@@ -1,9 +1,9 @@
-from api import test2
+from rolling-upgrades-during-test.api import test2
 
 
 def lcm():
 
     print "Ho"
-    test.compute()
+    test2.compute()
 
-lcm()
+#lcm()

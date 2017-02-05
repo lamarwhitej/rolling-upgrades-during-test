@@ -20,4 +20,4 @@ setup(
     ),
     entry_points={
         'console_scripts': [
-            'rolling-upgrades-during-test = rolling-upgrades-during-test.call_test:entry_point']})
+            'rolling-upgrades-during-test = rolling-upgrades-during-test.test:lcm']})
