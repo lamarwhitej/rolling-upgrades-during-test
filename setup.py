@@ -6,8 +6,8 @@ setup(
     description='Parses a given input and inserts into ElasticSearch.',
     author='Joshua White',
     author_email='joshua.l.white@intel.com',
-    url='https://github.com/osic/rolling-upgrades-during-test',
-    packages=['rolling-upgrades-during-test'],
+    url='https://github.com/lamarwhitej/rolling-upgrades-during-test',
+    packages=['rolling_upgrades_during_test','rolling_upgrades_during_test/api'],
     install_requires=open('requirements.txt').read(),
     classifiers=(
         'Development Status :: 4 - Beta',
@@ -20,4 +20,4 @@ setup(
     ),
     entry_points={
         'console_scripts': [
-            'rolling-upgrades-during-test = rolling-upgrades-during-test.test:lcm']})
+            'rolling-upgrades-test=rolling_upgrades_during_test.test:lcm']})

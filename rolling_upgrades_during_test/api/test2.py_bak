@@ -1,0 +1,5 @@
+
+
+Class Compute():
+    def compute():
+       print "Ho2"
